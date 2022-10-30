@@ -1,0 +1,12 @@
+{
+  "name": "generator",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Generate html from md files",
+  "main": "index.js",
+  "author": "Not me",
+  "license": "ISC",
+  "dependencies": {
+    "marked": "^4.1.1"
+  }
+}
