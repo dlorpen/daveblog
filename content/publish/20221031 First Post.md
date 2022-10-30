@@ -18,4 +18,4 @@ In order to run the container on the server I use docker compose as described [h
 
 I am using [letsencrypt with certbot]() to give me a free SSL certificate for the [daveorpen.com](daveorpen.com) domain.
 
-And that's pretty much it. Link to the github repo is [here]() for anyone who's interested :)
+And that's pretty much it. Link to the github repo is [here](https://github.com/dlorpen/daveblog) for anyone who's interested :)
