@@ -32,7 +32,7 @@ try {
       htmlFileName,
       postHtml
         .replace("INSERT_CONTENT_HERE", htmlContent)
-        .replace("INSERT_TITLE_HERE", mdFileName)
+        .replaceAll("INSERT_TITLE_HERE", mdFileName)
     );
     links.push({
       url: `/posts/${mdFileName}.html`,
