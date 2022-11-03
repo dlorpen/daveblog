@@ -14,7 +14,9 @@ try {
   );
 
   const postDir = path.join("content", "publish");
-  const mdFiles = await fs.readdir(postDir);
+  const mdFiles = (await fs.readdir(postDir)).filter(
+    (file) => path.extname(file)?.toUpperCase() === ".MD"
+  );
   mdFiles.sort();
   const links = [];
   for (const file of mdFiles) {

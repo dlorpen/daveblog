@@ -4,7 +4,7 @@ rm -rf output/
 mkdir -p output output/posts
 
 cp -r ./content/images ./output/
-cp -r ./layout/public/* ./output/
+cp -r ./layout/public/*.md ./output/
 
 source ~/.nvm/nvm.sh
 nvm use $(cat ./generator/.nvmrc)
