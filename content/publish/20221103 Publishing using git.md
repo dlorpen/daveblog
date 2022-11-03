@@ -30,6 +30,12 @@ echo "Done"
 
 ```
 
+I had to chmod the thing to be executable so that git would run it every time a push to the repo happens:
+
+```bash
+chmod +x ./git/hooks/post-receive
+```
+
 Then I set the server git repository to be a remote repository on my local repo like so:
 
 ```bash
@@ -43,3 +49,7 @@ git config add receive.denyCurrentBranch warn
 ```
 
 Finally I was able to push to the server and now I build and deploy with a single `git push server` command :) I think it's pretty neat if I do say so myself :)
+
+## Caveats
+
+There are of course some things to watch out for. The script as written will do a build and deploy if _any_ branch is pushed to the server. This isn't a big deal for me, but it might be better to use a different hook to to verify which branch was pushed before building if that's critical...
