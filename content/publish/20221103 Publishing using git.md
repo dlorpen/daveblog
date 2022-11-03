@@ -1,6 +1,6 @@
 # Using a git hook to build on push to the server
 
-So my internet's a bit crap at the moment. I decided I can't be transferring a ~100 megabyte file across the wire every time I wanna publish some minor random update to my minor random blog, so I went and read some docs [excellent ones here](https://githooks.com/), which led me to [this blogpost](http://ryanflorence.com/deploying-websites-with-a-tiny-git-hook/).
+So my internet's a bit crap at the moment. I decided I can't be transferring a ~100 megabyte file across the wire every time I wanna publish some minor random update to my minor random blog, so I went and read some docs ([excellent ones here](https://githooks.com/)), which led me to [this blogpost](http://ryanflorence.com/deploying-websites-with-a-tiny-git-hook/).
 
 The end result was, I created a git repo on the server (just did a `git init`, I didn't want a bare repo 'cos I wanted to checkout the code on the server and build the docker image there).
 
