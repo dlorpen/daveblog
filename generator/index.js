@@ -50,7 +50,7 @@ try {
         .map(
           (link) =>
             `<li><a href="${link.url}" 
-              alt=${`blog post titled: ${link.title}`}>
+              alt="${`blog post titled: ${link.title}`}">
               ${link.title}
               </a></li>`
         )
