@@ -46,12 +46,15 @@ try {
     path.join("output", "index.html"),
     indexHtml.replace(
       "INSERT_LINKS_HERE",
-      `<ul>${links.map(
-        (link) =>
-          `<li><a href="${
-            link.url
-          }" alt=${`blog post titled: "${link.title}"`}>${link.title}</a></li>`
-      )}</ul>`
+      `<ul>${links
+        .map(
+          (link) =>
+            `<li><a href="${link.url}" 
+              alt=${`blog post titled: ${link.title}`}>
+              ${link.title}
+              </a></li>`
+        )
+        .join("\n")}</ul>`
     )
   );
 } catch (err) {
